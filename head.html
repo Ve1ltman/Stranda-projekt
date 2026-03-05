@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stranda Treningspark – Halden</title>
+  <meta name="description" content="En enkel og moderne nettside for Stranda Treningspark i Halden." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header" id="topp">
+    <nav class="nav container">
+      <a class="logo" href="#topp" aria-label="Stranda Treningspark">
+        Stranda<span>Treningspark</span>
+      </a>
+
+      <div class="navActions">
+        <button class="themeBtn" id="themeToggle" aria-label="Bytt tema" title="Bytt tema">🌙</button>
+        <button class="menuBtn" id="menuBtn" aria-label="Meny" aria-expanded="false">☰</button>
+      </div>
+
+      <div class="navLinks" id="navLinks">
+        <a href="#om">Om oss</a>
+        <a href="#tilbud">Tilbud</a>
+        <a href="#video">Treningsvideoer</a>
+        <a href="#galleri">Galleri</a>
+        <a href="#sikkerhet">Sikkerhet</a>
+        <a href="#kart">Kart</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </nav>
+
+    <section class="hero container">
+      <div class="heroText">
+        <p class="badge">Halden • Tren ute • Gratis og tilgjengelig</p>
+        <h1>Tren ute i Stranda Treningspark</h1>
+        <p class="lead">
+          Et enkelt sted å bygge styrke, kondisjon og gode vaner.
+          Her finner du forslag til økter, treningsvideoer, bilder og kart.
+        </p>
+
+        <div class="heroButtons">
+          <a class="btn primary" href="#video">Se videoøkter</a>
+          <a class="btn ghost" href="#galleri">Se galleri</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="statNum">3</div>
+            <div class="statText">nivåer</div>
+          </div>
+          <div class="stat">
+            <div class="statNum">15–30</div>
+            <div class="statText">min økter</div>
+          </div>
+          <div class="stat">
+            <div class="statNum">Ute</div>
+            <div class="statText">hele året</div>
+          </div>
+        </div>
+
+        <!-- WEATHER -->
+        <div class="weatherCard" id="weatherCard" aria-live="polite">
+          <div class="weatherTop">
+            <h3>Været i Halden</h3>
+            <span class="pill" id="weatherStatus">Laster…</span>
+          </div>
+          <p class="weatherLine" id="weatherLine">Henter værdata…</p>
+          <p class="mutedSmall">Tips: Ved regn kan du trene under tak og fokusere på styrke.</p>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <h3>Dagens forslag</h3>
+        <ul class="checklist">
+          <li>5 min oppvarming (lett jogg/gå)</li>
+          <li>3×10 knebøy</li>
+          <li>3×8 push-ups (på benk hvis lett)</li>
+          <li>3×20 sek planke</li>
+          <li>2 min rolig nedtrapping</li>
+        </ul>
+        <p class="hint">Tips: Start rolig og øk litt hver uke.</p>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- OM OSS -->
+    <section class="section" id="om">
+      <div class="container">
+        <h2>Om Stranda Treningspark</h2>
+        <p class="muted">
+          Denne siden er laget som et skoleprosjekt og viser en enkel, moderne nettside
+          med informasjon, treningsvideoer, galleri, sikkerhetstips og kart.
+        </p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Hvorfor trene ute?</h3>
+            <p>
+              Ute-trening kan være motiverende, gratis og sosialt. Du kan kombinere styrke,
+              kondisjon og mobilitet på samme sted.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>For alle nivåer</h3>
+            <p>
+              Øvelser kan tilpasses: gjør det lettere (kortere tid, færre repetisjoner)
+              eller vanskeligere (flere runder, tyngre variant).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TILBUD -->
+    <section class="section alt" id="tilbud">
+      <div class="container">
+        <h2>Tilbud / øvelser</h2>
+        <p class="muted">Her er typiske økter du kan gjøre i en treningspark.</p>
+
+        <div class="cards3">
+          <article class="card">
+            <h3>Styrke (20 min)</h3>
+            <p class="mutedSmall">Kroppsvekt og enkle øvelser</p>
+            <ul class="list">
+              <li>Knebøy / utfall</li>
+              <li>Push-ups</li>
+              <li>Planke</li>
+              <li>Rygg/ro-variant (hvis mulig)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Kondisjon (15–25 min)</h3>
+            <p class="mutedSmall">Intervall som passer de fleste</p>
+            <ul class="list">
+              <li>30 sek raskt / 30 sek rolig</li>
+              <li>8–12 runder</li>
+              <li>Gå/jogg etter nivå</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Mobilitet (10 min)</h3>
+            <p class="mutedSmall">Bevegelighet og skadeforebygging</p>
+            <ul class="list">
+              <li>Hofteåpner</li>
+              <li>Skulderrotasjon</li>
+              <li>Legg/ankel</li>
+              <li>Rolig tøying</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="section" id="video">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Treningsvideoer</h2>
+            <p class="muted">
+              Trykk play og følg med. Videoene er hentet fra YouTube (embed).
+            </p>
+          </div>
+
+          <div class="chipRow">
+            <button class="chip active" data-filter="alle">Alle</button>
+            <button class="chip" data-filter="styrke">Styrke</button>
+            <button class="chip" data-filter="kondisjon">Kondisjon</button>
+            <button class="chip" data-filter="mobilitet">Mobilitet</button>
+          </div>
+        </div>
+
+        <div class="videoGrid" id="videoGrid">
+          <article class="videoCard" data-type="styrke">
+            <h3>Full body (uten utstyr)</h3>
+            <div class="ratio">
+              <iframe
+                src="https://www.youtube.com/embed/gC_L9qAHVJ8"
+                title="Full body workout"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <p class="mutedSmall">20 min rolig tempo – passer nybegynnere.</p>
+          </article>
+
+          <article class="videoCard" data-type="kondisjon">
+            <h3>Cardio / HIIT</h3>
+            <div class="ratio">
+              <iframe
+                src="https://www.youtube.com/embed/ml6cT4AZdqI"
+                title="HIIT workout"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <p class="mutedSmall">Rask økt – ta pauser ved behov.</p>
+          </article>
+
+          <article class="videoCard" data-type="mobilitet">
+            <h3>Mobilitet og tøying</h3>
+            <div class="ratio">
+              <iframe
+                src="https://www.youtube.com/embed/L_xrDAtykMI"
+                title="Stretching and mobility"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <p class="mutedSmall">Fin som avslutning etter trening.</p>
+          </article>
+
+          <article class="videoCard" data-type="styrke">
+            <h3>Push-ups og overkropp</h3>
+            <div class="ratio">
+              <iframe
+                src="https://www.youtube.com/embed/IODxDxX7oi4"
+                title="Push-up workout"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <p class="mutedSmall">Lett å tilpasse med benk/knær.</p>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>Tips:</strong> Vi kopierer ikke videoene. Vi viser dem bare via YouTube sin innebygde spiller (embed).
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERI -->
+    <section class="section alt" id="galleri">
+      <div class="container">
+        <div class="sectionHead">
+          <div>
+            <h2>Galleri</h2>
+            <p class="muted">Bilder fra Stranda Treningspark i Halden.</p>
+          </div>
+          <p class="mutedSmall">Klikk på et bilde for å forstørre.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="galleryItem"><img src="stranda%20en.jpg" alt="Stranda Treningspark – bilde 1" loading="lazy"></figure>
+          <figure class="galleryItem"><img src="stranda%20to.jpg" alt="Stranda Treningspark – bilde 2" loading="lazy"></figure>
+          <figure class="galleryItem"><img src="stranda%20tre.jpg" alt="Stranda Treningspark – bilde 3" loading="lazy"></figure>
+          <figure class="galleryItem"><img src="stranda%20fire.jpg" alt="Stranda Treningspark – bilde 4" loading="lazy"></figure>
+          <figure class="galleryItem"><img src="stranda%20fem.jpg" alt="Stranda Treningspark – bilde 5" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIKKERHET -->
+    <section class="section" id="sikkerhet">
+      <div class="container">
+        <h2>Regler for trygg trening</h2>
+        <p class="muted">Enkle regler som gjør treningen tryggere og mer effektiv.</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Før du starter</h3>
+            <ul class="safeList">
+              <li>Varm opp 5–10 minutter</li>
+              <li>Drikk vann</li>
+              <li>Start rolig og øk gradvis</li>
+              <li>Bruk sko med godt grep</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Under trening</h3>
+            <ul class="safeList">
+              <li>Hold god teknikk (kvalitet &gt; fart)</li>
+              <li>Ikke overbelast kroppen</li>
+              <li>Stopp hvis du føler smerte</li>
+              <li>Ta pauser ved behov</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Husk:</strong> Dette er generelle tips. Tilpass etter ditt nivå.
+        </div>
+      </div>
+    </section>
+
+    <!-- KART -->
+    <section class="section alt" id="kart">
+      <div class="container">
+        <h2>Kart</h2>
+        <p class="muted">Finn treningsparken på kartet (Google Maps embed).</p>
+
+        <div class="mapCard">
+          <div class="ratio mapRatio">
+            <iframe
+              src="https://www.google.com/maps?q=Stranda%20treningspark%20Halden&output=embed"
+              title="Google Maps – Stranda treningspark Halden"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="mapActions">
+            <a class="btn primary" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Stranda%20treningspark%20Halden">
+              Åpne i Google Maps
+            </a>
+            <span class="mutedSmall">Åpner i ny fane.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section" id="kontakt">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <p class="muted">(Eksempel for skoleprosjekt) Du kan bytte tekst til riktig kontaktinfo hvis du vil.</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Besøk</h3>
+            <p>
+              <strong>Sted:</strong> Halden<br />
+              <strong>Åpent:</strong> Hele dagen (uteområde)
+            </p>
+            <p class="mutedSmall">Tips: Legg gjerne inn info om tilgjengelighet og parkering.</p>
+          </div>
+
+          <div class="card">
+            <h3>Send en melding</h3>
+            <form class="form" id="contactForm">
+              <label>
+                Navn
+                <input type="text" name="name" placeholder="Skriv navnet ditt" required />
+              </label>
+              <label>
+                E-post
+                <input type="email" name="email" placeholder="din@epost.no" required />
+              </label>
+              <label>
+                Melding
+                <textarea name="message" rows="4" placeholder="Hva lurer du på?" required></textarea>
+              </label>
+              <button class="btn primary" type="submit">Send</button>
+              <p class="mutedSmall" id="formMsg" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerInner">
+      <p>© <span id="year"></span> Stranda Treningspark </p>
+
+      <div class="socials">
+        <a class="social" href="#" aria-label="Instagram">📷 Instagram </a>
+        <a class="social" href="#" aria-label="Facebook">📘 Facebook </a>
+        <a class="toTop" href="#topp">Til toppen ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightboxClose" id="lightboxClose" aria-label="Lukk">✕</button>
+    <img id="lightboxImg" alt="Forstørret bilde">
+  </div>
+
+  <script src="bein.js"></script>
+</body>
+</html>
